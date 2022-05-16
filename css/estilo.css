@@ -63,6 +63,7 @@ background-attachment: fixed;
 
         
 }
+
 *{
     margin: 0px;
 }
@@ -118,13 +119,23 @@ nav ul li{
 }
 /* esta vinculado com uma article */
 .texto {
+    color:rgb(165, 165, 165);
+    text-rendering: auto;
+    text-indent: 1em;
+    text-align: left;
 }
+h1{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    color:rgb(165, 165, 165);
+}
+
 /* É a sessão de cada informação */
 section{
     width: 71%;
     padding: 2%;
     float: left;
-    color: white;
+    
 }
 aside{
     padding: 2%;
@@ -152,14 +163,11 @@ aside{
 .img-section{
        border-radius: 6px;
     align-self: center;
-    width: 250px;
+    width: 300px;
     height: auto;
 
 }
 
-h1{
-    color: white;
-}
 a:link{text-decoration: none;
 color: lightsteelblue;}
 a:hover{text-decoration: underline;
