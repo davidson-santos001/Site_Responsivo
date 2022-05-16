@@ -167,7 +167,13 @@ aside{
     height: auto;
 
 }
-
+.img-side{
+    border-radius: 3px;  
+    align-self: center;
+    width: 170px;
+    height: auto;
+    padding-top: 230px;
+}
 a:link{text-decoration: none;
 color: lightsteelblue;}
 a:hover{text-decoration: underline;
