@@ -74,23 +74,13 @@ background-attachment: fixed;
     margin-right: auto;*/
     margin: auto;
     background-color:rgb(209, 238, 252);
- border-top-left-radius: 5px;
-    border-top-right-radius: 6px;
-    opacity: 1.0;
 }
 /*area formatada para colocar uma imagem e logotipo da empresa */
 #logotipo{
-    width: 170px;
-    height:75px;
-    float:left;
-    color:white;
+    float:left;   
     text-align: center;
     font-family:"Verdana, Geneva, Tahoma, sans-serif";
-    font-size: 2rem;
-    line-height: 75px;
-    background-color: rgb(0, 0, 0);
-    border-top-left-radius:10px;
-    border-bottom-left-radius: 10px;
+    background-color: rgb(0, 0, 0);  
 }
 
 #cabecalho{
@@ -104,11 +94,11 @@ nav ul li{
 }
 /*espaço reservado para o menu */
 #menu{
-    width:730px;
+    width:900px;
     background-color: rgba(0,0,0,1.00);
     float: right;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    
+    
 }
 /*conteudo seria a parte principal , para poder colocar as informações do site com noticias videos e tals */
 #conteudo {
@@ -143,6 +133,7 @@ aside{
     float:right;
     color: white;
 }
+
 #rodape {
     background-color:black;
     color: white;
@@ -165,8 +156,6 @@ aside{
     align-self: center;
     width: 300px;
     height: auto;
-    
-   
 }
 .img-side{
     border-radius: 3px;  
@@ -174,6 +163,11 @@ aside{
     width: 170px;
     height: auto;
     padding-top: 230px;
+}
+.img-icon{
+    width: 15px;
+vertical-align: text-bottom;
+
 }
 a:link{text-decoration: none;
 color: lightsteelblue;}
