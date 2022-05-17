@@ -73,7 +73,7 @@ background-attachment: fixed;
     /*margin-left: auto;
     margin-right: auto;*/
     margin: auto;
-    background-color:	#01012b;
+    background-color:rgb(209, 238, 252);
  border-top-left-radius: 5px;
     border-top-right-radius: 6px;
     opacity: 1.0;
@@ -119,15 +119,15 @@ nav ul li{
 }
 /* esta vinculado com uma article */
 .texto {
-    color:rgb(165, 165, 165);
+    color:rgb(0, 0, 0);
     text-rendering: auto;
     text-indent: 1em;
     text-align: left;
 }
 h1{
     text-decoration: underline;
-    text-decoration-color: yellow;
-    color:rgb(165, 165, 165);
+    text-decoration-color: rgb(255, 0, 0);
+    color:rgb(0, 0, 0);
 }
 
 /* É a sessão de cada informação */
@@ -165,7 +165,8 @@ aside{
     align-self: center;
     width: 300px;
     height: auto;
-
+    
+   
 }
 .img-side{
     border-radius: 3px;  
