@@ -77,12 +77,17 @@ background-attachment: fixed;
 }
 /*area formatada para colocar uma imagem e logotipo da empresa */
 #logotipo{
-    float:left;   
-    text-align: center;
+    
+    text-align:left;
+    padding-left: 20px;
+    padding-top: 8px;
     font-family:"Verdana, Geneva, Tahoma, sans-serif";
     background-color: rgb(0, 0, 0);  
+    height: 20px;
 }
-
+.img-logotipo{
+    width: 80px;
+}
 #cabecalho{
 }
 /*menus de navegação com lista ordenada */
@@ -92,11 +97,12 @@ nav ul li{
     margin-left: 25px;
     line-height: 75px;
 }
+
 /*espaço reservado para o menu */
 #menu{
     width:900px;
     background-color: rgba(0,0,0,1.00);
-    float: right;
+    text-align: center;
     
     
 }
@@ -151,6 +157,7 @@ aside{
    
 
 }
+
 .img-section{
        border-radius: 6px;
     align-self: center;
@@ -169,37 +176,30 @@ aside{
 vertical-align: text-bottom;
 
 }
-a:link{text-decoration: none;
-color: lightsteelblue;}
-a:hover{text-decoration: underline;
-  color:yellow;
+.menu_hover:link{text-decoration: none;
+color: lightsteelblue;
 }
-a:visited{
-    color: purple;}
+.menu_hover:hover{text-decoration: underline;
+  color:yellow;
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: bolder;
+text-shadow:  6px 6px 6px olive;
+}
+.menu_hover:visited{
+    color: orangered;
+  
+}
 @media (min-width: 1024px){
     
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
      body{
-    background-image: url("../img/praia.jpg");
+    background-image: url("../img/fundo.jpg");
     background-repeat: no-repeat;
 background-size: cover;
         
-}
-/*area formatada para colocar uma imagem e logotipo da empresa */
-#logotipo {
-    width: 100%;/*ou 320px que funcionara na tela do celular pequeno*/
-    height: 75px;
-    color: white;
-    /*margin-top: 15px;
-    margin-left: 3px;*/
-    text-align: center;
-    font-family: "Hoefler Text", "Liberation Serif","Times New Roman", "serif";
-    font-size: 3rem;
-    line-height: 75px;
-    background-color: gray; 
-
 }
 /*menus de navegação com lista ordenada */
 nav ul li {
@@ -209,12 +209,16 @@ nav ul li {
     text-align: center;
     margin-left: 0px;
     padding-left: 0px;
-    
+
+}
+#logotipo{
+    text-align: center;
+    height: 100px;
 }
 /*espaço reservado para o menu */
 #menu {
     width: 100%;
-    height: 150px;
+    height: 265px;
     background-color: rgba(0,0,0,1.00);
     text-align: center;
     padding-right: 15px;
@@ -227,7 +231,7 @@ nav ul li {
     /*margin-left: auto;
     margin-right: auto;*/
     margin: auto;
-    background-color: lightsteelblue;
+    background-color: rgb(209, 238, 252);
 }
 section {
     width:95%;
@@ -236,7 +240,7 @@ section {
 
 }
 h1 {
-    color: white;
+    color: black;
     text-align: center;
     padding-top:10px; 
     padding-bottom:10px;
@@ -247,7 +251,7 @@ aside {
     text-align: justify;
 }
 #rodape {
-    background-color: grey;
+    background-color:black;
     color: white;
     text-align: center;
     line-height: 50px;
@@ -264,7 +268,7 @@ aside {
     text-align: center;
     font-size: 2rem;
     border-radius: 5px;
-    background-color: lightsteelblue;
+    background-color: rgb(209, 238, 252);
     cursor: pointer;
     display: block;
     
@@ -274,39 +278,31 @@ aside {
 
 @media (min-width: 480px) and (max-width: 767px){
     body{
-    background-image: url("../img/praia.jpg");
+    background-image: url("../img/fundo.jpg");
     background-repeat: no-repeat;
 background-size: cover;
         
 }
-    /*area formatada para colocar uma imagem e logotipo da empresa */
-#logotipo {
-    width: 100%;/*ou 320px que funcionara na tela do celular pequeno*/
-    height: 75px;
-    color: white;
-    /*margin-top: 15px;
-    margin-left: 3px;*/
-    text-align: center;
-    font-family: "Hoefler Text", "Liberation Serif","Times New Roman", "serif";
-    font-size: 3rem;
-    line-height: 75px;
-    background-color: gray; 
 
-}
 /*menus de navegação com lista ordenada */
 nav ul li {
     list-style-type: none;
     display: block;
-    line-height: 30px;
+    line-height: 20px;
     text-align: center;
     margin-left: 0px;
     padding-left: 0px;
     
+    
+}
+#logotipo{
+    text-align: center;
+    height: 100px;
 }
 /*espaço reservado para o menu */
 #menu {
     width: 100%;
-    height: 150px;
+    height: 220px;
     background-color: rgba(0,0,0,1.00);
     text-align: center;
     padding-right: 15px;
@@ -315,102 +311,13 @@ nav ul li {
 }
 /*container é o corpo do site em si */
 #container {
+
     width: 100%;
     /*margin-left: auto;
     margin-right: auto;*/
     margin: auto;
-    background-color: lightsteelblue;
-}
-section {
-    width:95%;
-    padding: 2%;
-    text-align: justify;
-
-}
-h1 {
-    color: white;
-    text-align: center;
-    padding-top:10px; 
-    padding-bottom:10px;
-}
-aside {
-    padding: 2%;
-    width: 95%;
-    text-align: justify;
-}
-#rodape {
-    background-color: grey;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    height: 50px;
-    width: 100%;
-}
-
-#botaoresponsive {
-    width:50px;
-    heigth:50px;
-    margin-top:15px;
-    margin-left: 2px;
-    position: absolute;
-    text-align: center;
-    font-size: 2rem;
     border-radius: 5px;
-    background-color: lightsteelblue;
-    cursor: pointer;
-    display: block;
-    
-}
-}
-
-@media (min-width:321px) and (max-width:479px){
-    body{
-    background-image: url("../img/praia.jpg");
-    background-repeat: no-repeat;
-background-size: cover;
-        
-}
-    /*area formatada para colocar uma imagem e logotipo da empresa */
-#logotipo {
-    width: 100%;/*ou 320px que funcionara na tela do celular pequeno*/
-    height: 75px;
-    color: white;
-    /*margin-top: 15px;
-    margin-left: 3px;*/
-    text-align: center;
-    font-family: "Hoefler Text", "Liberation Serif","Times New Roman", "serif";
-    font-size: 3rem;
-    line-height: 75px;
-    background-color: gray; 
-
-}
-/*menus de navegação com lista ordenada */
-nav ul li {
-    list-style-type: none;
-    display: block;
-    line-height: 30px;
-    text-align: center;
-    margin-left: 0px;
-    padding-left: 0px;
-    
-}
-/*espaço reservado para o menu */
-#menu {
-    width: 100%;
-    height: 150px;
-    background-color: rgba(0,0,0,1.00);
-    text-align: center;
-    padding-right: 15px;
-    margin-left: 0px;
-    display: none;
-}
-/*container é o corpo do site em si */
-#container {
-    width: 100%;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    margin: auto;
-    background-color: lightsteelblue;
+    background-color: rgb(209, 238, 252);
 }
 section {
     width:95%;
@@ -419,7 +326,7 @@ section {
 
 }
 h1 {
-    color: white;
+    color: black;
     text-align: center;
     padding-top:10px; 
     padding-bottom:10px;
@@ -430,7 +337,7 @@ aside {
     text-align: justify;
 }
 #rodape {
-    background-color: grey;
+    background-color: black;
     color: white;
     text-align: center;
     line-height: 50px;
@@ -447,7 +354,90 @@ aside {
     text-align: center;
     font-size: 2rem;
     border-radius: 5px;
-    background-color: lightsteelblue;
+    border-radius: 5px;
+    background-color:rgb(209, 238, 252) ;
+    cursor: pointer;
+    display: block;
+    
+}
+}
+
+@media (min-width:321px) and (max-width:479px){
+    body{
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+background-size: cover;
+        
+}
+    /*area formatada para colocar uma imagem e logotipo da empresa */
+    #logotipo{
+        text-align: center;
+        height: 100px;
+    }
+/*menus de navegação com lista ordenada */
+nav ul li {
+    list-style-type: none;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 0px;
+    padding-left: 0px;
+    
+}
+/*espaço reservado para o menu */
+#menu {
+    width: 100%;
+    height: 260px;
+    background-color: rgba(0,0,0,1.00);
+    text-align: center;
+    padding-right: 15px;
+    margin-left: 0px;
+    display: none;
+}
+/*container é o corpo do site em si */
+#container {
+    width: 100%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin: auto;
+    background-color: rgb(209, 238, 252);
+}
+section {
+    width:95%;
+    padding: 2%;
+    text-align: justify;
+
+}
+h1 {
+    color: black;
+    text-align: center;
+    padding-top:10px; 
+    padding-bottom:10px;
+}
+aside {
+    padding: 2%;
+    width: 95%;
+    text-align: justify;
+}
+#rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+}
+
+#botaoresponsive {
+    width:50px;
+    height:50px;
+    margin-top:15px;
+    margin-left: 2px;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(209, 238, 252);
     cursor: pointer;
     display: block;
     
@@ -458,23 +448,16 @@ aside {
 
 @media (min-width: 0px) and (max-width: 320px){
     body{
-    background-image: url("../img/praia.jpg");
+    background-image: url("../img/fundo.jpg");
     background-repeat: no-repeat;
 background-size: cover;
         
 }
 /*area formatada para colocar uma imagem e logotipo da empresa */
 #logotipo {
-    width: 100%;/*ou 320px que funcionara na tela do celular pequeno*/
-    height: 75px;
-    color: white;
-    /*margin-top: 15px;
-    margin-left: 3px;*/
     text-align: center;
-    font-family: "Hoefler Text", "Liberation Serif","Times New Roman", "serif";
-    font-size: 3rem;
-    line-height: 75px;
-    background-color: gray; 
+    height: 100px;
+   
 
 }
 /*menus de navegação com lista ordenada */
@@ -490,7 +473,7 @@ nav ul li {
 /*espaço reservado para o menu */
 #menu {
     width: 100%;
-    height: 150px;
+    height: 260px;
     background-color: rgba(0,0,0,1.00);
     text-align: center;
     padding-right: 15px;
@@ -503,7 +486,7 @@ nav ul li {
     /*margin-left: auto;
     margin-right: auto;*/
     margin: auto;
-    background-color: lightsteelblue;
+    background-color: rgb(209, 238, 252);
 }
 section {
     width:95%;
@@ -512,7 +495,7 @@ section {
 
 }
 h1 {
-    color: white;
+    color: black;
     text-align: center;
     padding-top:10px; 
     padding-bottom:10px;
@@ -523,7 +506,7 @@ aside {
     text-align: justify;
 }
 #rodape {
-    background-color: grey;
+    background-color: black;
     color: white;
     text-align: center;
     line-height: 50px;
@@ -533,14 +516,14 @@ aside {
 
 #botaoresponsive {
     width:50px;
-    heigth:50px;
+    height:50px;
     margin-top:15px;
     margin-left: 2px;
     position: absolute;
     text-align: center;
     font-size: 2rem;
     border-radius: 5px;
-    background-color: lightsteelblue;
+    background-color: rgb(209, 238, 252);
     cursor: pointer;
     display: block;
     
